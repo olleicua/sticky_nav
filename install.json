@@ -1,0 +1,39 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "script",
+        "src": "./sticky_nav.js"
+      }
+    ],
+    "body": [
+      {
+        "type": "script",
+        "contents": "window.StickyNav.init.apply(this, INSTALL_OPTIONS.stickyItems);"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "stickyItems": {
+        "type": "array",
+        "title": "Sticky Elements",
+        "items": {
+          "type": "object",
+          "properties": {
+            "selector": {
+              "type": "string",
+              "format": "selector",
+              "title": "Element"
+            },
+            "topMargin": {
+              "type": "number",
+              "title": "Top Spacing",
+              "description": "Minimum spacing from the top the viewport in pixels"
+            }
+          }
+        }
+      }
+    }
+  }
+}
