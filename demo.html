@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sliding Demo</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="sticky_nav.js"></script>
+    <style type="text/css">
+      body {
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      .head {
+        height: 150px;
+        width: 100%;
+        padding: 25px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 50px;
+      }
+      .top-nav {
+        height: 20px;
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+        background-color: #fff;
+        color: #000;
+      }
+      .side-nav {
+        width: 140px;
+        padding: 5px;
+        background-color: #fff;
+        color: #000;
+        float: left;
+      }
+      .content {
+        width: 500px;
+        margin: 15px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      Sliding Demo
+    </div>
+    <div class="top-nav" data-sliding-margin="0">
+      Link 1 | Link 2 | Link 3
+    </div>
+    <div class="side-nav eager-sliding-item" data-sliding-margin="100" style="margin: 15px;">
+      Link 1<br />
+      Link 2<br />
+      Link 3<br />
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit ligula vel dui tempor, fermentum bibendum odio laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam mattis sapien id sapien fermentum, vitae vehicula turpis hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi euismod felis at egestas scelerisque. Maecenas nisl ipsum, facilisis quis consectetur eget, venenatis sit amet augue. Suspendisse rutrum eget lectus sed mollis. Aenean erat erat, laoreet nec odio tempus, facilisis convallis eros. Sed non fermentum arcu, aliquet maximus mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam nec augue iaculis lacus dignissim aliquet non sit amet purus. Cras quis iaculis massa. Integer condimentum felis vitae sagittis luctus. Curabitur ut suscipit sem. Praesent vitae consectetur sem, sed condimentum sapien.</p>
+
+      <p>Nunc quis posuere mi. Etiam quis dignissim mi. Etiam molestie magna nulla, dignissim lobortis lacus cursus hendrerit. Sed hendrerit condimentum lorem, ut accumsan elit fringilla id. Donec sed ipsum nulla. Sed non ex lacinia, bibendum neque vel, maximus tortor. Donec commodo dolor ac justo auctor, vitae maximus odio consectetur. Aliquam scelerisque purus in rutrum efficitur. Nulla vestibulum finibus nulla, non semper ante rhoncus vitae. Sed et arcu commodo, lobortis est at, mattis leo. Morbi aliquam dapibus dui eu maximus. Praesent tempus, nisi a hendrerit interdum, sapien lorem tempor leo, in varius felis purus nec lectus. Nam sit amet malesuada sem, ac mattis nunc.</p>
+
+      <p>Aliquam ultricies tristique dui, mattis mattis nisi. In hac habitasse platea dictumst. Pellentesque suscipit nulla dui, vel viverra dui malesuada egestas. Quisque dignissim felis ac hendrerit scelerisque. Etiam dictum consectetur dui sed consequat. Integer ac dapibus enim. Curabitur purus leo, malesuada at mi nec, sodales eleifend sapien. Phasellus sollicitudin tortor ut nibh condimentum, id posuere augue ultrices. Pellentesque varius nisl risus, at finibus justo pellentesque non.</p>
+
+      <p>Nunc interdum tempus consequat. Duis eu nulla vitae ligula tempus tempor. Curabitur semper ipsum eu arcu tincidunt accumsan ut fringilla elit. Donec eget neque in leo euismod ullamcorper eu at lorem. Phasellus at imperdiet lacus. Sed sagittis ultrices mi id convallis. Quisque erat neque, euismod vel semper nec, imperdiet ut quam.</p>
+
+      <p>Phasellus vehicula quis risus a rhoncus. Quisque velit lectus, congue luctus ligula vitae, finibus suscipit arcu. Pellentesque finibus eget felis et egestas. Fusce vitae nisi vel dui varius ullamcorper quis non neque. Suspendisse convallis faucibus elit in pellentesque. Pellentesque a nibh tortor. Fusce risus dui, aliquam eu varius id, egestas in orci. Nunc quis molestie elit. Donec convallis posuere tellus vel fringilla. Vivamus rutrum, tortor ac ultricies tempus, ligula diam sagittis nisl, eget cursus nulla dolor quis quam. Etiam elit lectus, sodales sit amet justo porttitor, dapibus commodo tortor. Nullam a hendrerit massa. Fusce maximus purus eget nisl varius aliquam.</p>
+
+      <p>Sed tristique dui id lacinia commodo. Sed non lacinia urna. Proin a felis ex. Donec a pulvinar est. Donec eros velit, varius sit amet enim vel, scelerisque vestibulum tortor. Aenean convallis commodo velit, in sagittis nulla maximus quis. Vestibulum sem lorem, placerat at tempus vitae, tristique a nunc. Quisque maximus hendrerit augue, vel elementum purus auctor molestie. Nullam fermentum neque non tellus pretium condimentum nec vitae ante. Sed tristique sem id neque cursus consectetur. Nullam vitae neque tincidunt, faucibus quam at, gravida augue. Vestibulum a suscipit enim. Maecenas lacinia commodo eros.</p>
+
+      <p>Phasellus vestibulum justo at nisl malesuada lacinia. Fusce ultrices tellus in metus sodales porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla sem massa, laoreet et tellus nec, dapibus congue ex. Etiam nec bibendum velit. Aliquam iaculis odio est, at varius mi venenatis sit amet. Morbi aliquet lobortis lectus, a laoreet elit cursus eu. Nulla facilisi. Praesent ut lectus id risus aliquet elementum sed et elit. Curabitur id nisi justo. Ut leo lacus, venenatis molestie ligula eget, suscipit vehicula justo. Integer facilisis sit amet risus vitae efficitur. Donec lacus quam, varius eu quam et, efficitur ultrices nisi. Donec ornare euismod nibh, et finibus nulla pretium non. In sodales facilisis metus, sed ultrices nisl fermentum at. In scelerisque malesuada tellus luctus rhoncus.</p>
+
+      <p>Praesent lacus dolor, finibus in mauris id, ultricies semper diam. Cras aliquam iaculis venenatis. Donec ac laoreet neque. Mauris gravida ac neque eu volutpat. Praesent consequat tincidunt lorem, nec pretium odio. Aenean convallis quam quis sem pharetra dignissim. Etiam lobortis eleifend risus, tempor placerat sapien egestas nec. Aenean molestie massa vitae ligula rhoncus mattis. Integer eget augue sagittis, tempus massa ut, imperdiet nisi. Cras augue sapien, tempus et ultricies eget, laoreet ac nibh. Maecenas in consectetur risus. Curabitur non massa non nisi rutrum consectetur in ac nulla. Mauris sed rhoncus neque, id placerat tortor.</p>
+
+      <p>Nunc ut auctor nulla. Morbi auctor nec nibh non semper. Nulla nec urna sed massa dictum luctus. Proin vitae sem vel tortor venenatis scelerisque. Nulla facilisi. Curabitur in pharetra dui. Pellentesque in quam nec metus vestibulum convallis vitae ac magna. In ultricies enim diam, a placerat felis porta et. Donec efficitur nibh eu bibendum mattis. Cras scelerisque quam at accumsan euismod. Donec tortor est, ullamcorper id ultricies vitae, venenatis et sapien. Aenean viverra justo lacus, a semper justo ultricies non. Nam auctor nibh cursus semper blandit.</p>
+
+      <p>Ut fringilla turpis consectetur fringilla rutrum. Nulla facilisi. Sed id nunc quis magna facilisis malesuada. Nunc ullamcorper, erat luctus condimentum commodo, dolor leo convallis nunc, non tempus odio urna quis arcu. Morbi hendrerit ac elit eu mollis. Sed interdum, turpis ut consectetur tincidunt, quam arcu volutpat velit, id viverra ipsum ex sit amet tortor. Ut mauris tellus, malesuada dignissim neque at, pretium elementum erat.</p>
+
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce suscipit augue eleifend arcu pellentesque ultricies. Etiam dictum in purus semper varius. Pellentesque faucibus congue aliquam. Integer consectetur enim nisi, mollis iaculis metus gravida eget. Morbi non nibh sed nunc lacinia consequat a sit amet ante. Nunc leo velit, vulputate vitae rutrum ac, lobortis quis justo. Quisque maximus mauris augue, ac efficitur lacus viverra sit amet. Praesent in nulla et velit dapibus bibendum ut ac ligula.</p>
+
+      <p>Cras quis nunc id purus eleifend facilisis. Nam bibendum rhoncus diam et vestibulum. Praesent non neque ultrices, rutrum ante id, dictum diam. Pellentesque sed leo odio. Morbi placerat turpis ac mollis sodales. Aenean vulputate posuere neque, id rutrum massa volutpat varius. Nulla elit nibh, vestibulum convallis lacinia a, volutpat a mi. Quisque ut orci nisl. Mauris id cursus velit. Donec nec blandit ligula. Aliquam blandit semper dignissim. Suspendisse facilisis, massa nec finibus pharetra, nulla enim tristique libero, sit amet eleifend ligula odio non purus</p>
+    </div>
+
+    <script type="text/javascript">
+      StickyNav.init({selector: '.top-nav', topMargin: 0},
+                     {selector: '.side-nav', topMargin: 100})
+    </script>
+  </body>
+</html>
